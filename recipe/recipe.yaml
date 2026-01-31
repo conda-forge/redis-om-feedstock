@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redis-om
-  version: 0.3.5
+  version: "1.0.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/redis/redis-om-python/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: d197f9325ddeca628d18ce3765c50f22c9590a6125d55dc47ff9e17c499a0fa0
+  sha256: c598879f84fef14164f566a9782656313d1b4c4dde3ff9550af59dea36cb8d55
   patches:
     - include-redis_om-package.patch
     - python-ulid-version-upper-bound.patch
