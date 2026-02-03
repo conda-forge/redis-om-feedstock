@@ -11,6 +11,8 @@ Summary: Object mappings, and more, for Redis.
 
 Development: https://github.com/redis/redis-om-python
 
+Documentation: https://redis.github.io/redis-om-python/
+
 Current build status
 ====================
 
