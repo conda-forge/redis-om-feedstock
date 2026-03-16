@@ -40,7 +40,7 @@ requirements:
     - more-itertools >=8.14,<11.0
     - setuptools >=70.0
     - pydantic-extra-types >=2.10.5
-    - redisvl >=0.13.0
+    - redisvl >=0.16.0
 
 tests:
   - python:
