@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: redis-om
-  version: "1.1.0"
+  version: "1.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/redis/redis-om-python/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 259864e262eaf0c4f836d9d270a24079e504e92c91d5587bbfb8fce827eb2162
+  sha256: e369f8d67e3f5f566ea7836c536b6f088613dabcaa7c2069dc5ac7e391943ba5
 
 build:
   number: 0
@@ -31,17 +31,17 @@ requirements:
     - ruff >=0.9.0
   run:
     - python >=${{ python_min }}
-    - redis-py >=4.2.0,<8.0.0
+    - redis-py >=6.3.0,!=8.0.0,<9.0.0
     - pydantic >=2.0.0,<3.0.0
     - click >=8.0.1
     - types-redis >=3.5.9,<5.0.0
     - python-ulid >=1.0.3,<=3.1.0
     - typing_extensions >=4.4.0
     - hiredis >=2.2.3,<4.0.0
-    - more-itertools >=8.14,<11.0
+    - more-itertools >=8.14,<12.0
     - setuptools >=70.0
     - pydantic-extra-types >=2.10.5
-    - redisvl >=0.16.0
+    - redisvl >=0.27.0
 
 tests:
   - python:
